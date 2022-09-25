@@ -13,7 +13,7 @@ const Shop = () => {
         .then(data => setProducts(data))
     },[]);
     const handlerAddToCart=(product)=>{
-        console.log(product)
+        // console.log(product)
         const newCart=[...cart,product]
         setCart(newCart)
         
@@ -27,7 +27,7 @@ const Shop = () => {
                     products.map(product => <Product
                     product={product}
                     key={product.id}
-                handlerAddToCart={handlerAddToCart}
+                    handlerAddToCart={handlerAddToCart}
                     ></Product>)
                 }
             </div>
