@@ -1,0 +1,19 @@
+.products{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 140px;
+    padding-right: 139px;
+    height: 70px;
+    
+}
+.products a{
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    font-size: 17px;
+}
+.products a:hover{
+    color: orange;
+}
