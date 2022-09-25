@@ -8,6 +8,10 @@
     grid-gap: 45px;
     margin: 100px 50px;
 }
+.cart-container{
+    background-color: #FFE0B3;
+    padding: 10px;
+}
 @media screen and (max-width:1100px) {
     .products-container{
         display: grid;
