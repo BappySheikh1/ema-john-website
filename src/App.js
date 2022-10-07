@@ -1,13 +1,13 @@
-
 import './App.css';
-import Products from './components/Products/Products';
-import Shop from './components/Shop/Shop';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './Router';
+
 
 function App() {
   return (
     <div>
-        <Products></Products>
-        <Shop></Shop>
+        
+        <RouterProvider router={router} />
     </div>
   );
 }
