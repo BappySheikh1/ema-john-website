@@ -6,6 +6,7 @@ import { AuthContext } from '../../contexts/UserContext';
 const Header = () => {
 
     const {user}=useContext(AuthContext)
+    
     return (
         <div className='products'>
 
