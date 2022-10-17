@@ -39,8 +39,9 @@ const handleRemoveItem = (id) =>{
             <div className='cart-container'>
               <Cart 
               clearCart={clearCart}
-              cart={cart}
-              ></Cart>
+              cart={cart}>
+               <Link to='/shipping'><button className='btn-clear'>Procced Shipping </button></Link>
+              </Cart>
             </div>
 
         </div>
