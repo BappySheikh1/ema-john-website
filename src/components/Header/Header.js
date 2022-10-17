@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../contexts/UserContext';
 const Header = () => {
 
-    const {user}=useContext(AuthContext)
-    
+    const {user,LogOut}=useContext(AuthContext)
+   
     return (
         <div className='products'>
 
@@ -18,7 +18,7 @@ const Header = () => {
                 <Link to="/about">About</Link>
                 <Link to="/login">Log In</Link>
                 <Link to="/signup">Sign Up</Link>
-
+                 
             </div>
         </div>
     );
