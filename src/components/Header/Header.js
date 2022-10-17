@@ -6,7 +6,7 @@ import { AuthContext } from '../../contexts/UserContext';
 const Header = () => {
 
     const {user,LogOut}=useContext(AuthContext)
-   
+//    console.log(user);
     return (
         <div className='products'>
 
@@ -16,9 +16,15 @@ const Header = () => {
                 <Link to="/orders">Orders</Link>
                 <Link to="/inventory">Inventory</Link>
                 <Link to="/about">About</Link>
-                <Link to="/login">Log In</Link>
-                <Link to="/signup">Sign Up</Link>
-                 
+                {user?.uid ?
+                <button className='btn-logOut' onClick={()=>LogOut()}>Log Out</button>
+                :
+                <>
+                 <Link to="/login">Log In</Link>
+                 <Link to="/signup">Sign Up</Link>
+                </>
+                }
+                 <span>{user?.email}</span>
             </div>
         </div>
     );

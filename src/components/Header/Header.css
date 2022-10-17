@@ -17,3 +17,13 @@
 .products a:hover{
     color: orange;
 }
+.btn-logOut{
+    cursor: pointer;
+    font-size: 17px;
+    border: none;
+    background-color: black;
+    color:white;
+}
+.btn-logOut:hover{
+    color: orange;
+}
